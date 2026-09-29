@@ -1,0 +1,489 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top:0;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+header ul{
+  width: 40%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header ul li{
+  list-style: none;
+  cursor: pointer;
+}
+
+li a{
+  color: rgb(57, 57, 59);
+  transition: all 0.3s;
+  padding:2px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 430;
+  font-size: 15.2px;
+}
+
+li a:hover{
+  color: rgb(7, 24, 104);
+}
+
+li .login{
+ font-weight: 430;
+  font-size: 15.2px;
+}
+
+header h2{
+  margin-left: 1rem;
+}
+
+section{
+  height: 85vh;
+  width: 95%;
+  margin: 0 auto;
+  /* background-image: url("assets/savory-mexican-food-sauces.jpg"); */
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  /* background-attachment: fixed; */
+}
+
+.home{
+  display: flex;
+  margin-top: 6rem;
+  gap:10rem;
+  position: relative;
+}
+.home .left{
+  /* background-color: #d4f6e8; */
+  height: 400px;
+  width: 450px;
+  padding: 10px 20px ;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+.home .left h1{
+  margin-bottom: 1rem;
+}
+.home .left .purpose{
+  font-size: 53px;
+  font-weight: 520;
+}
+.home .left .purpose span{
+  color: rgb(226, 135, 31);
+}
+.home button{
+  color: white;
+  border:none;
+  background-color: #213547;
+  width: 200px;
+  padding: 0.8rem;
+  border-radius: 20px;
+}
+
+.home a:hover{
+  color: white;
+  background-color: #2c4860;
+}
+
+.home .left h5{
+  margin:2rem 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #4b5563;
+  line-height: 1.6;
+}
+.home .left .showName{
+  font-size: 14px;
+  color: rgb(161, 154, 154);
+}
+.home .left .waveHand{
+  width: 20px;
+  height: 20px;
+  color: rgb(146, 217, 230);
+}
+.home-container .recipe{
+  margin-top: 60px;
+}
+.recipe .card-topic{
+  /* background-color: red; */
+  margin-bottom: 30px;
+  margin-left: 110px;
+}
+.bg svg{
+  position: absolute;
+  bottom: 0;
+}
+
+.card-container{
+  width: 85%;
+  margin: auto;
+  display: grid;
+  gap:8rem;
+  grid-template-columns: repeat(auto-fit,13rem);
+  cursor:pointer
+}
+
+
+.card{
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.card-body{
+  background-color: #cde6ee;
+  padding: 1rem;
+  width: 300px;
+}
+.card button{
+  color: white;
+  border:none;
+  background-color: #213547;
+  width: 200px;
+  padding: 0.8rem;
+  border-radius: 20px;
+}
+.card-body .title{
+  margin-bottom:5px;
+  font-size: 15px;
+  font-weight:500;
+  color: #050505;
+  text-decoration: none !important;
+}
+.card .food-img img{
+  height: 300px;
+  width: 300px;
+}
+.card-body .ins {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size: 13px;
+  color: #7c7878;
+  
+}
+.card-body .icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body .timer{
+  display: flex;
+  align-items: center;
+  gap:2px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.action{
+  display: flex;
+  font-size: 19px;
+  justify-content: space-between;
+  align-items: center;
+  width: 45px;
+}
+
+.editIcon{
+  color: black;
+  font-size: 18px;
+}
+
+.action a:hover{
+  color: black;
+}
+
+.deleteIcon{
+  color: rgb(239,53,53);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal{
+  position: fixed;
+  top: 34%;
+  z-index: 10;
+  padding: 2rem;
+  border-radius: 6px;
+  border:none;
+  left:30%;
+  width: 40%;
+}
+
+.backdrop{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 9;
+}
+
+.form{
+  width: 71%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-header{
+  background-color: #d4f6e8;
+  height: 3px;
+  text-align: center;
+}
+
+.form-control{
+  display: flex;
+  justify-content: space-between;
+  gap:1rem;
+  margin-top: 1rem;
+}
+.form-control .lab{
+  color: rgb(134, 132, 132);
+}
+.form-control .input{
+  flex-basis: 70%;
+  border:1px solid rgb(156 163 175);
+  border-radius: 10px;
+  height: 35px;
+  padding: 5px;
+}
+
+.form-control .input-textarea{
+  border: 1px solid rgb(156 163 175);
+  border-radius: 10px;
+  flex-basis: 70%;
+  padding: 2px;
+}
+
+.form button{
+  margin:2rem 0;
+  padding: 10px 30px;
+  border:none;
+  color: #ffffff;
+  background-color: #2f495e;
+  font-size: 15px;
+  border-radius: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+.form button:hover{
+  color: #000000;
+  background-color: #ffffff;
+}
+.form p{
+  cursor: pointer;
+  display: inline;
+  border-bottom: 1px solid #307bbd;
+  color:rga(4,136,170);
+  font-size: 14px;
+  color: #307bbd;
+}
+
+.form .error{
+  color:red;
+  font-size: 13px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.add-recipe{
+  width: 100%;
+}
+
+.recipe{
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+.recipe .card-des {
+  /* background-color: red; */
+  text-align: center;
+  margin-bottom: 20px;
+}
+.recipe .card-des h1{
+   font-size: 40px;
+   font-weight: 700;
+}
+.recipe .card-des h1 span{
+  color: rgb(233, 106, 21);
+}
+.recipe .card-des p{
+  font-size: 15px;
+  color: #4b5563;
+
+}
+.footer{
+  width:100vw;
+  height: 35px;
+  color: white;
+  background-color: #000000;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 6px;
+  font-size: 14px;
+}
+
+.outer-container{
+  width: 70%;
+  margin: 5rem auto;
+}
+
+.outer-container .profile{
+  display: flex;
+  gap:1rem;
+  align-items: center;
+}
+
+.outer-container .title{
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.outer-container .recipe-details{
+  display: flex;
+  gap: 3rem;
+  align-items: justify;
+  margin-top: 1rem;
+}
+
+.active{
+  color:black !important;
+  background-color: #d0dceb;
+  padding: 8px 25px;
+  border-radius: 0%;
+}
+.recipe-details{
+  /* background-color: aquamarine; */
+  display: flex;
+  height: 100vh;
+}
+.recipe-details .left{
+  flex: 1.3;
+  /* background-color: red; */
+  height: 700px;
+  margin-top: 50px;
+  margin-right: 0px;
+
+}
+.recipe-details .left img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;  
+   opacity: 90%;
+}
+.recipe-details .right{
+  flex: 3;
+  /* background-color: antiquewhite; */
+  margin: 60px 40px 40px;
+  height: 500px;
+}
+.recipe-details .right .rest{
+  background-color: rgb(218, 216, 216);
+  opacity: calc(60%);
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  padding: 20px 20px 20px;
+  border-radius: 30px;
+}
+.recipe-details .right h1{
+  color: rgb(226, 135, 31);
+  font-size: 37px;
+  font-weight: 600;
+}
+.recipe-details .right p{
+  font-size: 14px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.search-container input {
+  width: 400px;
+  padding: 12px 18px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-container input:focus {
+  border-color: #4caf50;
+}
+.num {
+  height: 50px;
+  display: flex;
+  margin: 20px 450px 450px;
+  border-top: 1px solid gray;
+}
+.num .one,
+.num .two,
+.num .three,
+.num .four{
+  flex: 1;
+}
+.num .one h3,
+.num .two h3,
+.num .three h3,
+.num .four h3{
+  margin-top: 13px;
+}
+/* ----------------------------------Through Page------------------------------------------ */
+.throughs{
+  height: 300px;
+  /* background-color: red; */
+  display: flex;
+  margin-left: 35px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.throughs .five,
+.throughs .six,
+.throughs .seven,
+.throughs .eight{
+  flex: 1;
+  background-color: rgb(226, 226, 226);
+  margin-right: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+
+}
+.throughs .showIcon{
+  color: rgb(226, 135, 31);
+  font-size: 45px;
+}
+.throughs p{
+  font-size: 15.4px;
+  text-align: left;
+}
