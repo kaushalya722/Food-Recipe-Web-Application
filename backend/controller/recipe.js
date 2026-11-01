@@ -21,6 +21,7 @@ const  getRecipe = async (req, res) => {
     const recipe = await Recipes.findById(req.params.id)
     return res.json(recipe);
 }
+
 const  addRecipe = async (req, res) => {
     const {title, ingredients, instructions, time} = req.body
     if(!title || !ingredients || !instructions){
@@ -32,6 +33,7 @@ const  addRecipe = async (req, res) => {
     })
     return res.json(newRecipe);
 }
+
 const  editRecipe = async (req, res) => {
     const {title, ingredients, instructions, time} = req.body
    let recipe = await Recipes.findById(req.params.id)
