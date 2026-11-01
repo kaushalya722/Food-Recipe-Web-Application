@@ -18,6 +18,7 @@ const Home =() => {
   let path = window.location.pathname==="/myRecipe" ? true : false
   let pathHome = window.location.pathname==="/" ? true : false
   
+  
 
 const navigate = useNavigate();
 const [isOpen, setIsOpen] = useState(false)
@@ -36,7 +37,7 @@ else{
                 <div className='left'>
                     <p className='purpose'>Adventure <br/>of <span>Delicacies</span></p>
 
-                    {/* <p className='showName'><MdWavingHand className='waveHand'/> Hi {user?.email ? `${user?.email}` : ""}</p> */}
+                    <p className='showName'>Hi, {user?.username ? `${user?.username}` : ""} <MdWavingHand className='waveHand'/></p>
                     <h5>Unlock a world of variety culinary recipes and unleash<br/>your inner chef the easy way with foodRecipe</h5>
                     <button onClick={addRecipe}>Share your recipe</button>
                 </div>
