@@ -40,6 +40,10 @@ li a{
 li a:hover{
   color: rgb(145, 160, 228);
 }
+.nav-menu a.active {
+  color: rgb(145, 160, 228);
+  font-weight: 600;
+}
 li .login{
  font-weight: 430;
   font-size: 14px;
